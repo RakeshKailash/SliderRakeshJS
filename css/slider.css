@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body
+{
+	height: 100%;
+}
+
+#slider_js{
+	width: 100%;
+	height: 100%;
+	background: #222;
+	overflow: hidden;
+}
+
+.seta{
+	color: #fff;
+	height: 100%;	
+	cursor: pointer;	
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#controles_slider{
+	width: 100%;
+	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: table;
+}
+
+#s_esquerda{
+	text-shadow: 3px 3px 10px #000;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition-duration: 0.3s;
+	text-align: left;
+	transition-timing-function: linear;	
+}
+
+#s_esquerda:hover{
+	text-shadow: 5px 5px 15px #000;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+
+#s_direita{
+	text-shadow: -3px 3px 10px #000;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: right;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+
+#s_direita:hover{
+	text-shadow: -5px 5px 15px #000;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+
+#slider_balls{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+}
+
+.ball{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	z-index: 999;
+	display: inline-block;
+	border: 7px solid #fff;
+	cursor: pointer;
+	box-shadow: 0px 5px 5px 0px #000;
+	margin-right: 5px;
+}
+
+.ball:last-child{
+	margin-right: 0;
+}
+
+.ball:hover{
+	background: #008000;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+
+.img_slider{
+	height: 100%;
+	width: auto ;
+}
+
+#center_img{
+	width: 100%;
+}
+
+.slider-active_ball{
+	background: #008000 !important;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+
+.slider-inactive_ball{
+	background: #fff;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+
+.slider-hidden_img{
+	display: none;
+}
+
+.slider-visible_img{
+	display: inline-block;
+}
